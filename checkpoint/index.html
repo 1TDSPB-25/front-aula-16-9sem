@@ -9,7 +9,7 @@
     <title>Minha Lojinha</title>
 
     <link rel="stylesheet" href="./assets/css/estilo1.css">
-    <script src="./assets/js/script2.js"></script>
+    <script src="./assets/js/script2.js" defer></script>
 
 </head>
 
@@ -24,6 +24,40 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Bem-vindo à Oz Doll Store</h2>
+                <p>Encontre bonecas e roupas estilosas para colecionadores e crianças.</p>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/img/doll-hero.png" alt="Boneca destaque" onerror="this.style.opacity=0.6">
+                <h1>Boneca Destaque</h1>
+                <h3>Blythe Colegial</h3>
+
+            </div>
+        </section>
+
+        <section class="products" aria-label="Produtos em destaque">
+            <article class="card">
+                <img src="./assets/img/doll1.png" alt="Boneca 1" onerror="this.style.opacity=0.6">
+                <h3>Boneca Stardust</h3>
+                <p>Boneca articulada, roupa incluída.</p>
+            </article>
+            <article class="card">
+                <img src="./assets/img/doll2.png" alt="Boneca 2" onerror="this.style.opacity=0.6">
+                <h3>Boneca Aurora</h3>
+                <p>Estilo vintage, acabamento premium.</p>
+            </article>
+            <article class="card">
+                <img src="./assets/img/outfit1.png" alt="Roupa 1" onerror="this.style.opacity=0.6">
+                <h3>Roupa Casual</h3>
+                <p>Conjunto casual para bonecas.</p>
+            </article>
+        </section>
+    </main>
+
     <footer>
         <p>Oz Doll Stores © 2025</p>
     </footer>
