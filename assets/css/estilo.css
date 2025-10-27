@@ -1,44 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
 
 html {
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
 }
- 
-.container{
-    font-family: Arial, Helvetica, sans-serif;
+
+.container {
     display: grid;
-   
+
     width: 100%;
     height: 100%;
     padding: 2%;
- 
- 
+
     /*Modelo de criação das COLUNAS*/
     grid-template-columns: 1fr;
     /* grid-template-columns: minmax(300px, 60%) repeat(3, 300px); */
-   
+
     /*Modelo de criação das linhas*/
     grid-template-rows: 1fr 3fr 1fr;
     row-gap: 5px;
- 
+
     align-items: center;
     justify-content: center;
- 
 }
- 
-.container header{
+
+.container header {
     padding: 0 2%;
     background-color: #4e54b1;
-    color:#fff;
+    color: #fff;
     height: 100%;
     grid-column: 1 / 2;
     grid-row: 1;
@@ -46,9 +44,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 
-    & h1{
+    & h1 {
         font-size: 4rem;
     }
 
@@ -56,11 +53,12 @@ body{
         width: 100%;
         display: flex;
         justify-content: flex-end;
-       
-        & a{
+
+        & a {
             display: flex;
             justify-content: center;
             text-align: center;
+            align-items: center;
             text-decoration: none;
             font-size: 3rem;
             display: inline-block;
@@ -69,73 +67,75 @@ body{
             background-color: #7e359e;
             padding: 1%;
             width: 15%;
-            border-radius: 10px;
-            transform: scale(1);
-            transform: translateY(0px);
-            transition: transform, background-color 0.2s ease-in-out;
+            border-radius: 20px;
+            /* transform: scale(1); */
+            transform: translateY(0);
+            transition: all 0.5s ease-in-out;
 
-            &:hover{
-                color: #7e359e;
+            &:hover {
                 background-color: #fff;
+                color: #7e359e;
                 transform: scale(1.05);
-                transform: translateY(-6px)
+                transform: translateY(-6px);
             }
         }
     }
 }
 
-@media (max-width:1300px) {
-        .container header{
-            flex-direction: column;
-            justify-content: space-around;
-                & nav{
-                    justify-content: center;
-                    align-items: center;
-                    & a{font-size: 2rem;
+@media (max-width: 1300px) {
+    .container header {
+        flex-direction: column;
+        justify-content: space-around;
+            & nav {
+                justify-content: center;
+                align-items: center;
+                & a {
+                    font-size: 2rem;
                 }
             }
         }
-    }
-
-@media (max-width:900px) and (orientation: portrait) {
-            .container header {
-            justify-content: space-around;
-            & nav{
-                justify-content: center;
-                align-items: center;
-                & a{font-size: 1rem;
-            }
-        }
-    }
 }
 
-@media (prefers-color-scheme: dark){
+@media (max-width: 800px) and (orientation: portrait) {
+    .container header {
+        justify-content: space-around;
+            & nav {
+                justify-content: center;
+                align-items: center;
+                & a {
+                    font-size: 1rem;
+                }
+            }
+        }
+}
+
+@media (prefers-color-scheme: light){
     .container header {
         background-color: black;
         color: #fff;
     }
 }
 
-@media (prefers-color-scheme: light){
+@media (prefers-color-scheme: dark){
     .container header {
         background-color: white;
-        color: black;
+        color: #000;
     }
 }
- 
-.container main{
+
+
+.container main {
     background-color: #1d28bc;
-    color:#fff;
+    color: #fff;
     height: 100%;
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 2;
 }
- 
-.container footer{
+
+.container footer {
     background-color: #7e359e;
-    color:#fff;
+    color: #fff;
     height: 100%;
     grid-column: 1/2;
-    grid-row:3;
-   
+    grid-row: 3;
 }
