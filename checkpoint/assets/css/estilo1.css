@@ -1,25 +1,4 @@
 
-/*Comentário em CSS*/
-/*Agrupamento de seletores*/
-/* h1,h2,p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkblue;
-} */
-/*Uso de classes e ids*/
-
-
-
-/* Combinadores relação entre seletores */
-
-div > p {
-    color: darkred;
-}
-
-h2 ~ p {
-    color: red;
-}
-
-
 ul{
     list-style-type: none;
     padding: 0;
@@ -64,8 +43,118 @@ body{
     background-color: #1d1c1c;
     color: #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 img{
-    width: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#cabecalho{
+    background-color:#1b1616;
+    color: #fff;
+}
+
+header{
+    padding: 18px 20px;
+}
+
+header h1{
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+}
+
+#menu ul{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu a{
+    color: darkgreen;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+#menu a:hover{
+    background: #fff;
+    color: #1b1616;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(90deg, #2a2a2a 0%, #1d1c1c 100%);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+.hero .hero-text{
+    flex: 1 1 400px;
+}
+
+.hero .hero-image{
+    flex: 0 0 150px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+}
+
+.card{
+    background: #262626;
+    padding: 14px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.card h3{
+    margin: 10px 0 6px 0;
+    font-size: 1rem;
+}
+
+.card p{
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+footer{
+    text-align: center;
+    padding: 18px 12px;
+    background: #171616;
+    color: #ccc;
+}
+
+@media (max-width: 650px){
+    .hero{flex-direction: column; align-items: flex-start}
+    .hero .hero-image{flex: 0 0 120px}
+    #menu ul{flex-direction: column}
 }
