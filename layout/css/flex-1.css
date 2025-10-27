@@ -3,23 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 html{
     font-size:62.5%;/*Tendo como base 16px o valor é 10px*/
     font-family: Verdana,sans-serif;
 }
- 
+
 body{
     width: 100vw;
     height: 100vh;
 }
- 
+
 .logo{
     max-width: 15%;
     border: 2px solid;
-    border-radius: 2px;
+    border-radius: 10px;
 }
- 
+
 .container{
     width: 90%;
     background: #070834;
@@ -30,7 +30,7 @@ body{
     margin:0 auto;
     color: #fff;
 }
- 
+
 .cabecalho{
     width: 100%;
     height: 15%;
@@ -41,7 +41,7 @@ body{
     margin-bottom: 5%;
     border: 2px solid;
 }
- 
+
 .menu ul{
     width: 100%;
     display: flex;
@@ -49,31 +49,31 @@ body{
     gap:20px;
     font-size: 3rem;
 }
- 
+
 .conteudo section div figure img{
     max-width: 50%;
 }
- 
- 
+
+
 .conteudo{
     width: 100%;
     height: 70%;
     font-size: 3rem;
     padding: 2%;
 }
- 
+
 .conteudo section{
     display: flex;
     flex-direction: column;
     gap:10px;
     margin-bottom: 2%;
 }
- 
+
 .conteudo section div{
     display: flex;
     gap:5px;
 }
- 
+
 .conteudo section div figure{
     display: inline-block;
     margin: 0 auto;
@@ -83,25 +83,78 @@ body{
     flex-direction: column;
 }
 
+
 .rodape{
     display: flex;
     justify-content: center;
     font-size: 2rem;
     align-items: flex-end;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  
  
+.box-pai{
+    display: flex;
+   flex-direction: row-reverse; 
+   flex-direction: column-reverse; 
+   gap:10px; 
+   justify-content: space-between; 
+   justify-content: space-evenly; 
+   flex-wrap: wrap;
+    justify-content: center;
+     align-content: center;
+    
+    border:2px solid #ff0000;
+    width: 100%;
+    height: 200px;
+}
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+.box{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.box-child1{
+    border: 2px solid #080870; 
+     flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 250px; 
+    ShortHand propertie
+     flex:1 2 250px; 
+  }
+.box-child2{
+    border: 2px solid #2c7008;
+}
+.box-child3{
+    border: 2px solid #70084a; 
+  flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 400px;  
+}
+.box-child4{
+    border: 2px solid #702008;
+}
+.box-child5{
+    border: 2px solid #706908;
+} 
+
+
+ */

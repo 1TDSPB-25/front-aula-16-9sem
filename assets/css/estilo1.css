@@ -1,30 +1,21 @@
 
-/* Comentário em CSS*/
+/*Comentário em CSS*/
 /*Agrupamento de seletores*/
-/*h1, h2,p{
+/* h1,h2,p{
     font-family: Arial, Helvetica, sans-serif;
     color: darkblue;
 } */
 /*Uso de classes e ids*/
-h1{
-    font-family: Arial, Helvetica, sans-serif;
 
-}
-nav{
-    width: 100%;
-    background-color: lightgray;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
 
-/* Combinadores relação seletores */
+
+/* Combinadores relação entre seletores */
 
 div > p {
     color: darkred;
-
 }
-h2 ~ p{
+
+h2 ~ p {
     color: red;
 }
 
@@ -34,32 +25,41 @@ ul{
     padding: 0;
     margin: 0;
 }
+
+nav{
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .link{
     display: inline-block;
-    margin: 0 auto;
     color: darkgreen;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
     border-top: #1b1616 solid 1px;
     border-bottom: #1b1616 solid 1px;
-
 }
+
 .link:hover{
     background-color: #1b1616;
     color: #fff;
     padding: 10px;
     border-top: #fff solid 1px;
     border-bottom: #fff solid 1px;
+
 }
 
-
 #cabecalho{
-    background-color:#1b1616;
+    background-color: #1b1616;
     padding: 15px;
     margin-bottom: 25px;
     color: #fff;
 }
+
 body{
     background-color: #1d1c1c;
     color: #fff;
@@ -68,5 +68,4 @@ body{
 
 img{
     width: 10%;
-    height: 100%;
 }
