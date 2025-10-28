@@ -31,3 +31,32 @@ header {
   flex-wrap: wrap;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--ciano);
+  color: var(--preto);
+  box-shadow: 0 0 10px var(--ciano);
+}
+
+
+
