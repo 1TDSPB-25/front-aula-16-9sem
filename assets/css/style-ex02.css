@@ -15,4 +15,19 @@
   --branco: #ffffff;
 }
 
+body {
+  background-color: var(--preto);
+  color: var(--branco);
+  line-height: 1.6;
+}
 
+header {
+  background: linear-gradient(90deg, var(--roxo-escuro), var(--roxo-principal));
+  color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
