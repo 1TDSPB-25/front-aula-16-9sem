@@ -78,3 +78,30 @@ nav a:hover {
   margin-right: auto;
   color: var(--cinza-claro);
 }
+
+.grid-cards {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr; /* Mobile */
+  padding: 60px 20px;
+  background: #1c1c1e;
+  max-width: 1200px;        
+  margin: 0 auto;            
+}
+
+.card {
+  background: #18181b;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
