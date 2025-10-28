@@ -58,5 +58,23 @@ nav a:hover {
   box-shadow: 0 0 10px var(--ciano);
 }
 
+.aprender {
+  background: linear-gradient(180deg, var(--roxo-principal), var(--preto));
+  text-align: center;
+  padding: 80px 20px;
+}
 
+.aprender h1 {
+  font-size: 42px;
+  color: var(--branco);
+  margin-bottom: 20px;
+}
 
+.aprender p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--cinza-claro);
+}
