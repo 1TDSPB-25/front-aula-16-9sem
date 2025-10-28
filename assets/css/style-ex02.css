@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+:root {
+  --roxo-principal: #6c63ff;
+  --roxo-escuro: #3b2fb3;
+  --ciano: #00d4ff;
+  --preto: #0f0f10;
+  --cinza-escuro: #1c1c1e;
+  --cinza-claro: #a8a8a8;
+  --branco: #ffffff;
+}
+
+
