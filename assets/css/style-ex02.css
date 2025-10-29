@@ -126,15 +126,37 @@ nav a:hover {
 
 .sobre h2 {
   color: var(--ciano);
-  font-size: 2rem;
+  font-size: 24px;
   margin-bottom: 20px;
 }
 
 .sobre p{
   color: var(--cinza-claro);
-  line-height: 1.7;
+  line-height: 1.5;
   margin-bottom: 12px;
 }
+
+footer {
+  background: var(--roxo-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 768px) {
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
 
 
 
