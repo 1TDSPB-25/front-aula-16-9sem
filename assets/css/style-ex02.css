@@ -82,10 +82,10 @@ nav a:hover {
 .grid-cards {
   display: grid;
   gap: 24px;
-  grid-template-columns: 1fr; 
+  grid-template-columns: repeat(3, 1fr);
   padding: 60px 20px;
   background: #1c1c1e;
-  max-width: 1200px;        
+      
   margin: 0 auto;            
 }
 
@@ -116,4 +116,27 @@ nav a:hover {
   margin: 0 16px 20px;
   line-height: 1.5;
 }
+
+.sobre{
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sobre h2 {
+  color: var(--ciano);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sobre p{
+  color: var(--cinza-claro);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+
+
+
 
